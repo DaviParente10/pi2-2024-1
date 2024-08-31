@@ -25,6 +25,21 @@
     border-radius: 50%; /* Torna os ícones circulares */
     padding: 10px;
 }
+
+.segunda-parte {
+    margin-top: 20px;
+}
+
+.text-button-wrapper{
+    display: flex;
+    align-items: center; /* Alinha verticalmente ao centro */
+    gap: 10px; /* Espaço entre o botão e o texto */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+.terceira-parte{
+    background: linear-gradient(to right, #FF7B77 0%, #FFB0AD 100%);
+
+}
 .whatsapp-link {
     position: fixed;
     bottom: 20px;
