@@ -1,18 +1,43 @@
+.carousel-and-text {
+    background-color: #ffe1e0;
+}
+
+.carousel-inner img {
+    width: 100%; /* Largura ajustada ao container */
+    height: 500px; /* Altura específica, você pode alterar conforme necessário */
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+.carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-and-text {
+    margin-top: 20px;
+}
+
+/* Mudar a cor dos ícones de navegação do carrossel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+    background-color: rgba(255, 255, 255, 0.5); /* Ajuste a cor e a opacidade conforme desejado */
+    border-radius: 50%; /* Torna os ícones circulares */
+    padding: 10px;
+}
 .whatsapp-link {
     position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
+    bottom: 20px;
+    right: 20px;
     background-color: #25d366;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 1px 1px 2px #888;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 20px;
     z-index: 1000;
 }
 
 .fa-whatsapp {
     margin-top: 16px;
 }
+

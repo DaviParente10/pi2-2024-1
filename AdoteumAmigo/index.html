@@ -11,19 +11,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <title>Adote um Amigo</title>
-    <style>
-        .whatsapp-link {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25d366;
-            color: white;
-            border-radius: 50%;
-            padding: 15px;
-            font-size: 20px;
-            z-index: 1000;
-        }
-    </style>
 </head>
 
 <body>
@@ -65,109 +52,145 @@
     </header>
 
     <main>
-        <!-- Formulário -->
-        <div class="container-lg"></div>
+        <div class="container-fluid">
+                   <!-- Seção para carrossel e texto lado a lado -->
+                <section class="container carousel-and-text">
+                    <div class="row">
+                        <!-- Coluna de Texto -->
+                        <div class="col-md-4">
+                            <h1>Doe amor, 
+                                doe o seu lar! 
+                                Adote um gatinho</h1><br>
+                            <a href="#" class="btn btn-primary btn-lg">Quero adotar</a>
+                        </div>
 
-        <form class="row g-3">
-            <div class="row g-3">
-                <div class="col">
+                        <!-- Coluna do Carrossel -->
+                        <div class="col-md-8">
+                            <!-- <img src="./imagens/catsinicio.png" class="img-fluid" alt="..."> -->
+
+                            <div id="carouselExampleCaptions" class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./imagens/catsinicio.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./imagens/catsinicio.png" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Segundo Slide</h5>
+                                            <p>Algum conteúdo representativo para o segundo slide.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagens/car02.jpg" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Terceiro Slide</h5>
+                                            <p>Algum conteúdo representativo para o terceiro slide.</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                    </section>
+                </main>
+        </section>
+
+        <!-- Formulário -->
+        <div class="container-fluid">
+            <form class="row g-3">
+                <div class="col-md-4">
                     <label for="primeiroNome" class="form-label">Primeiro nome</label>
-                    <input type="text" class="form-control" placeholder="Primeiro nome" aria-label="First name">
+                    <input type="text" class="form-control" id="primeiroNome" placeholder="Primeiro nome">
                 </div>
-                <div class="col">
-                    <label for="sengundoNome" class="form-label">Segundo nome</label>
-                    <input type="text" class="form-control" placeholder="Sugundo nome">
+                <div class="col-md-4">
+                    <label for="segundoNome" class="form-label">Segundo nome</label>
+                    <input type="text" class="form-control" id="segundoNome" placeholder="Segundo nome">
                 </div>
-            </div>
-            <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="exemplo@dominio.com">
-            </div>
-            <div class="col-md-6">
-                <label for="inputTelefone" class="form-label">Telefone</label>
-                <input type="tel" class="form-control" id="inputTelefone" placeholder="(XX) XXXXX-XXXX">
-            </div>
-            <div class="col-12">
-                <label for="inputAddress" class="form-label">Endereço</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Rua Exemplo, 123">
-            </div>
-            <div class="col-md-6">
-                <label for="inputCity" class="form-label">Cidade</label>
-                <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="col-md-4">
-                <label for="inputState" class="form-label">Região Administrativa</label>
-                <select id="inputState" class="form-select">
-                    <option selected>Escolha...</option>
-                    <option>Plano Piloto</option>
-                    <option>Gama</option>
-                    <option>Taguatinga</option>
-                    <option>Brazlândia</option>
-                    <option>Sobradinho
-                    </option>
-                    <option>Planaltina</option>
-                    <option>Paranoá</option>
-                    <option>Núcleo Bandeirante</option>
-                    <option>Ceilândia</option>
-                    <option>Guará</option>
-                    <option>Cruzeiro</option>
-                    <option>Samambaia</option>
-                    <option>Santa Maria
-                    </option>
-                    <option>São Sebastião
-                    </option>
-                    <option>Recanto das Emas
-                    </option>
-                    <option>Lago Sul</option>
-                    <option>Riacho Fundo
-                    </option>
-                    <option>Lago Norte
-                    </option>
-                    <option>Candangolândia</option>
-                    <option>Águas Claras
-                    </option>
-                    <option>Riacho Fundo II
-                    </option>
-                    <option>Sudoeste/Octogonal
-                    </option>
-                    <option>Varjão</option>
-                    <option>Park Way
-                    </option>
-                    <option>SCIA (Setor Complementar de Indústria e Abastecimento)
-                    </option>
-                    <option>Sobradinho II
-                    </option>
-                    <option>Jardim Botânico
-                    </option>
-                    <option>Itapoã</option>
-                    <option>Vicente Pires
-                    </option>
-                    <option>Fercal</option>
-                    <option>Sol Nascente/Pôr do Sol
-                    </option>
-                    <option>Arniqueira</option>
-                    <!-- Outros estados -->
-                </select>
-            </div>
-            <div class="col-md-2">
-                <label for="inputZip" class="form-label">CEP</label>
-                <input type="text" class="form-control" id="inputZip">
-            </div>
-            <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        Concordo com os termos
-                    </label>
+                <div class="col-md-4">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="exemplo@dominio.com">
                 </div>
-            </div>
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-        </form>
+                <div class="col-md-4">
+                    <label for="inputTelefone" class="form-label">Telefone</label>
+                    <input type="tel" class="form-control" id="inputTelefone" placeholder="(XX) XXXXX-XXXX">
+                </div>
+                <div class="col-6">
+                    <label for="inputAddress" class="form-label">Endereço</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Rua Exemplo, 123">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputCity" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Região Administrativa</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Escolha...</option>
+                        <option>Plano Piloto</option>
+                        <option>Gama</option>
+                        <option>Taguatinga</option>
+                        <option>Brazlândia</option>
+                        <option>Sobradinho</option>
+                        <option>Planaltina</option>
+                        <option>Paranoá</option>
+                        <option>Núcleo Bandeirante</option>
+                        <option>Ceilândia</option>
+                        <option>Guará</option>
+                        <option>Cruzeiro</option>
+                        <option>Samambaia</option>
+                        <option>Santa Maria</option>
+                        <option>São Sebastião</option>
+                        <option>Recanto das Emas</option>
+                        <option>Lago Sul</option>
+                        <option>Riacho Fundo</option>
+                        <option>Lago Norte</option>
+                        <option>Candangolândia</option>
+                        <option>Águas Claras</option>
+                        <option>Riacho Fundo II</option>
+                        <option>Sudoeste/Octogonal</option>
+                        <option>Varjão</option>
+                        <option>Park Way</option>
+                        <option>SCIA (Setor Complementar de Indústria e Abastecimento)</option>
+                        <option>Sobradinho II</option>
+                        <option>Jardim Botânico</option>
+                        <option>Itapoã</option>
+                        <option>Vicente Pires</option>
+                        <option>Fercal</option>
+                        <option>Sol Nascente/Pôr do Sol</option>
+                        <option>Arniqueira</option>
+                        <!-- Outros estados -->
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Concordo com os termos
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
         </div>
     </main>
-
 
     <footer>
         <!-- Rodapé -->
@@ -180,12 +203,10 @@
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
     <!-- Botão de WhatsApp -->
     <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5599111112222" target="_blank"
