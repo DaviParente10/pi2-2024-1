@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão Gatos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hidden-form {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="./imagens/logop.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
+            Adote um Amigo
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Site</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">Sair</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <div class="container mt-5">
+        <h1 class="text-center">Gestão Gatos</h1>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <form class="form-inline mb-3">
+                    <div class="form-group mb-2">
+                        <label for="filtro" class="sr-only">Filtrar:</label>
+                        <input type="text" class="form-control" id="filtro" placeholder="Digite para filtrar">
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2 ml-2">Filtrar</button>
+                    <button type="button" class="btn btn-success mb-2 ml-2" id="criarGatoBtn">Criar Gato</button>
+                </form>
+                <form id="criarGatoForm" class="hidden-form">
+                    <div class="form-group">
+                        <label for="nomeGato">Nome Gato:</label>
+                        <input type="text" class="form-control" id="nomeGato" placeholder="Nome do Gato">
+                    </div>
+                    <div class="form-group">
+                        <label for="estadoGato">Estado Gato:</label>
+                        <input type="text" class="form-control" id="estadoGato" placeholder="Estado do Gato">
+                    </div>
+                    <div class="form-group">
+                        <label for="generoGato">Gênero Gato:</label>
+                        <input type="text" class="form-control" id="generoGato" placeholder="Gênero do Gato">
+                    </div>
+                    <div class="form-group">
+                        <label for="observacaoGato">Observação Gato:</label>
+                        <input type="text" class="form-control" id="observacaoGato" placeholder="Observação do Gato">
+                    </div>
+                    <div class="form-group">
+                        <label for="statusGato">Status Gato:</label>
+                        <input type="text" class="form-control" id="statusGato" value="Disponível" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="imagemGato">Imagem Gato:</label>
+                        <input type="file" class="form-control" id="imagemGato">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+        <!-- Rodapé -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./imagens/logop.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
+                    Adote um Amigo
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"></li>
+                            <a class="nav-link" href="#">Topo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>    
+
+</footer>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('criarGatoBtn').addEventListener('click', function() {
+            var form = document.getElementById('criarGatoForm');
+            if (form.classList.contains('hidden-form')) {
+                form.classList.remove('hidden-form');
+            } else {
+                form.classList.add('hidden-form');
+            }
+        });
+    </script>
+</body>
+
+</html>
