@@ -26,9 +26,9 @@
     padding: 10px;
 }
 
-.segunda-parte {
+/*.segunda-parte {
     margin-top: 20px;
-}
+}*/
 
 .text-button-wrapper{
     display: flex;
@@ -36,9 +36,9 @@
     gap: 10px; /* Espaço entre o botão e o texto */
     justify-content: center; /* Centraliza horizontalmente */
 }
-.segunda-parte{
+.terceira-parte{
     background: linear-gradient(to right, #FF7B77 0%, #FFB0AD 100%);
-
+    margin-top: 20px;
 }
 
 /* Estilo base da timeline */
