@@ -54,10 +54,10 @@
 
     <main>
             <!-- Seção para carrossel e texto lado a lado -->
-            <section class="container-fluid carousel-and-text mt-auto">
+            <section class="container-fluid carousel-and-text mt-auto p-5">
                 <div class="row ">
                     <!-- Coluna de Texto -->
-                    <div class="col-md-4 mt-auto mb-5">
+                    <div class="col-md-4 mt-auto mb-5 ">
                         <h1>Doe amor,<br>
                             doe o seu lar!<br>
                             Adote um gatinho</h1><br>
@@ -100,7 +100,7 @@
             </section>
 
        
-        <section id="secao-3" class="container-fluid mt-auto">
+        <section id="secao-3" class="container-fluid mt-auto p-4">
                     <h1 class="display-4 text-center pb-3 pt-4" style="color: white;">Gatos para adoção</h1>
                     
                     <div class="row d-flex justify-content-center align-items-center pt-3">
@@ -224,7 +224,8 @@
                     <a href="#" class="btn btn-primary btn-lg col-3 mb-4" tabindex="-1" role="button" aria-disabled="true">Ver Todos</a>
                 </div>
         </section>
-        <section class=" container-fluid terceira-parte mt-5">
+
+        <section class=" container-fluid terceira-parte mt-5 p-4">
                 <h1 class="title text-center fs-1">Conheça a ONG Adote um Amigo</h1>
                 <p class="text-center mt-3 fs-4">
                     Existem muitos <strong>gatos a espera de um lar</strong> e com muito amor para oferecer.<br> Nós fazemos essa ponte
@@ -298,7 +299,7 @@
     </section>
     
     
-    <section id="secao-4" class="container-fluid">
+    <section id="secao-4" class="container-fluid pt-5">
         <div class="d-flex flex-column justify-content-center align-items-center vh-100">
             <h2 class="mb-3">Perguntas Frequentes</h2>
             <div class="accordion mt-2" id="accordionExample">
@@ -367,7 +368,8 @@
     </section>
 
    <!--<section class="quinta-parte">A DESENVOLVER</section>-->
-    <section id="secao-6" class="container-fluid">
+
+    <section id="secao-6" class="container-fluid p-5">
         <div class="row background-custom">
             <div class="col-md-6 mt-5">
                 <h2 class="text-white">Fale conosco agora mesmo</h2>
@@ -397,7 +399,7 @@
         </div>
     </section>
     <!-- inicio-formulario -->
-    <section id="formulário" class="container-fluid">
+    <section id="formulário" class="container-fluid p-5">
         <div class="container">
             <h2 class="text-center mb-4 pt-5 fs-1">Formulário de Intenção de Adoção</h2>
             <p class="text-center fs-4">Por favor, preencha o formulário abaixo com as informações corretas</p>
@@ -406,52 +408,53 @@
                 <!-- Dados Pessoais -->
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label for="nomeCompleto" class="form-label">Nome Completo*</label>
+                        <label for="nomeCompleto" class="form-label fw-bold">Nome Completo*</label>
                         <input type="text" class="form-control" id="nomeCompleto" placeholder="Nome Completo" required>
                     </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="idade" class="form-label">Idade*</label>
+                    <div class="col-md-2 mb-3">
+                        <label for="idade" class="form-label fw-bold">Idade*</label>
                         <input type="number" class="form-control" id="idade" placeholder="Idade" required>
                     </div>
                 </div>
                 
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <label for="exampleFormControlInput1" class="form-label fw-bold">Email</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                     </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="telefone" class="form-label">Telefone Contato*</label>
-                        <input type="tel" class="form-control" id="telefone" placeholder="Telefone" required>
+                    <div class="col-md-4 mb-3">
+                        <label for="telefone" class="form-labe fw-bold">Telefone Contato*</label>
+                        <input type="tel" class="form-control" id="telefone" placeholder="+55 (xx) xxxxx-xxxx" required>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="mb-3">
-                        <label for="endereco" class="form-label">Endereço*</label>
+                    <div class="col-md-8 mb-3">
+                        <label for="endereco" class="form-label fw-bold">Endereço*</label>
                         <input type="text" class="form-control" id="endereco" placeholder="Endereço" required>
                     </div>
-                        <div class="col-md-6"></div>
-                            <label for="bairro" class="form-label">Bairro*</label>
-                            <input type="text" class="form-control" id="" placeholder="Endereço" required>
-                        </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="bairro" class="form-label fw-bold">Bairro*</label>
+                        <input type="text" class="form-control" id="bairro" placeholder="Bairro" required>
+                    </div>
                 </div>
+                
     
                 <!-- Mais perguntas -->
                 <div class="mb-3 mt-3">
-                    <label for="quantosAnimais" class="form-label">Quantos animais você gostaria de adotar?*</label>
+                    <label for="quantosAnimais" class="form-label fw-bold">Quantos animais você gostaria de adotar?*</label>
                     <input type="text" class="form-control" id="quantosAnimais" placeholder="Ex: 1 ou 2" required>
                 </div>
     
                 <div class="mb-3">
-                    <label for="motivoAdocao" class="form-label">Você já adotou ou resgatou algum animal? Se sim, conte um pouco sobre sua experiência:</label>
+                    <label for="motivoAdocao" class="form-label fw-bold">Você já adotou ou resgatou algum animal? Se sim, conte um pouco sobre sua experiência:</label>
                     <textarea class="form-control" id="motivoAdocao" rows="3"></textarea>
                 </div>
     
                 <!-- Sobre sua Família -->
-                <h4 class="mb-3 text-center fs-1">Sobre sua Família</h4>
+                <h4 class="mb-3 text-center fs-1 mt-5">Sobre sua Família</h4>
     
                 <div class="mb-3">
-                    <label for="numMoradores" class="form-label fw-bold">Na sua residência, há quantos adultos e quantas crianças?*</label>
+                    <label for="numMoradores" class="form-label fw-bold mt-3">Na sua residência, há quantos adultos e quantas crianças?*</label>
                     <input type="number" class="form-control" id="numMoradores" required>
                 </div>
 
@@ -461,7 +464,7 @@
                 </div>
     
                 <div class="form-check">
-                    <label for="criançasCasa" class="form-label fw-bold">Todos concordam com a adoção desse animal? *
+                    <label for="criançasCasa" class="form-label fw-bold mt-3">Todos concordam com a adoção desse animal? *
                     </label>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="criancas" id="sim" required>
@@ -482,15 +485,15 @@
                 </div>
     
                 <div class="mb-3 mt-3">
-                    <label for="rotinaDiaria" class="form-label fw-bold">Qual o grau de parentesco das pessoas que moram com você? *</label>
+                    <label for="rotinaDiaria" class="form-label fw-bold mt-3">Qual o grau de parentesco das pessoas que moram com você? *</label>
                     <textarea class="form-control" id="rotinaDiaria" rows="4"></textarea>
                 </div>
     
                 <!-- Sobre sua Residência -->
-                <h4 class="mb-3 text-center fs-1">Sobre sua Residência</h4>
+                <h4 class="mb-4 text-center fs-1 mt-5">Sobre sua Residência</h4>
     
                 <div class="mb-3"></div>
-                    <label for="espacoDisponivel" class="form-label fw-bold">Você mora em apartamento ou casa? *</label>
+                    <label for="espacoDisponivel" class="form-label fw-bold mt-3">Você mora em apartamento ou casa? *</label>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="quintal" id="quintalSim" required>
                         <label class="form-check-label" for="quintalSim">Sim</label>
