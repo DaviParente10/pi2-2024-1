@@ -36,7 +36,7 @@
     gap: 10px; /* Espaço entre o botão e o texto */
     justify-content: center; /* Centraliza horizontalmente */
 }
-.segunda-parte{
+#secao-3{
     background: linear-gradient(to right, #FF7B77 0%, #FFB0AD 100%);
     margin-top: 20px;
 }
