@@ -152,7 +152,7 @@
 #formulário{
     background-image: linear-gradient(to right, #FFE7E7, #FFE1E0);
 }
-}
+
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
@@ -191,11 +191,11 @@
     margin-top: 16px;
 }
 
-.quarta-parte {
+#secao-4 {
     background-color: #FFE7E7;
 }
 
 /* Cor de fundo - Seção 6 */
-.sexta-parte {
+#secao-6 {
     background-color: #1168AD;
 }

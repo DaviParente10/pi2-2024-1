@@ -298,10 +298,10 @@
     </section>
     
     
-    <section id="secao-4" class="quarta-parte">
+    <section id="secao-4" class="container-fluid">
         <div class="d-flex flex-column justify-content-center align-items-center vh-100">
-            <h2 class="mb-2">Perguntas Frequentes</h2>
-            <div class="accordion" id="accordionExample">
+            <h2 class="mb-3">Perguntas Frequentes</h2>
+            <div class="accordion mt-2" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -365,11 +365,12 @@
             </div>
           </div>
     </section>
+
    <!--<section class="quinta-parte">A DESENVOLVER</section>-->
-    <section id="secao-6" class="sexta-parte">
+    <section id="secao-6" class="container-fluid">
         <div class="row background-custom">
-            <div class="col-md-6">
-                <h2>Fale conosco agora mesmo</h2>
+            <div class="col-md-6 mt-5">
+                <h2 class="text-white">Fale conosco agora mesmo</h2>
                 <form>
                     <div class="form-group">
                         <label for="nome">Nome</label>
@@ -385,9 +386,9 @@
                     </div>
                     <div class="form-group">
                         <label for="mensagem">Mensagem</label>
-                        <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
+                        <textarea class="form-control" id="mensagem" rows="5" placeholder="Sua mensagem"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                    <button type="submit" class="btn btn-primary btn-lg mt-2">Enviar mensagem</button>
                 </form>
             </div>
             <div class="col-md-6">
@@ -398,8 +399,8 @@
     <!-- inicio-formulario -->
     <section id="formulário" class="container-fluid">
         <div class="container">
-            <h2 class="text-center mb-4 pt-3">Formulário de Intenção de Adoção</h2>
-            <p class="text-center">Por favor, preencha o formulário abaixo com as informações corretas</p>
+            <h2 class="text-center mb-4 pt-5 fs-1">Formulário de Intenção de Adoção</h2>
+            <p class="text-center fs-4">Por favor, preencha o formulário abaixo com as informações corretas</p>
     
             <form>
                 <!-- Dados Pessoais -->
@@ -429,25 +430,10 @@
                         <label for="endereco" class="form-label">Endereço*</label>
                         <input type="text" class="form-control" id="endereco" placeholder="Endereço" required>
                     </div>
-                    <div class="col-md-6"></div>
-                        <label for="bairro" class="form-label">Bairro*</label>
-                        <input type="text" class="form-control" id="" placeholder="Endereço" required>
-                    </div>
-                </div>
-    
-                <!-- Tipo de Adoção -->
-                <label class="form-label">Quais tipos de animais você deseja adotar ou resgatar?*</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="tipoAnimal" id="cachorro" required>
-                    <label class="form-check-label" for="cachorro">Cachorro</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="tipoAnimal" id="gato" required>
-                    <label class="form-check-label" for="gato">Gato</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="tipoAnimal" id="outros" required>
-                    <label class="form-check-label" for="outros">Outros</label>
+                        <div class="col-md-6"></div>
+                            <label for="bairro" class="form-label">Bairro*</label>
+                            <input type="text" class="form-control" id="" placeholder="Endereço" required>
+                        </div>
                 </div>
     
                 <!-- Mais perguntas -->
@@ -462,44 +448,49 @@
                 </div>
     
                 <!-- Sobre sua Família -->
-                <h4 class="mb-3">Sobre sua Família</h4>
+                <h4 class="mb-3 text-center fs-1">Sobre sua Família</h4>
     
                 <div class="mb-3">
-                    <label for="numMoradores" class="form-label">Quantas pessoas moram com você?</label>
+                    <label for="numMoradores" class="form-label fw-bold">Na sua residência, há quantos adultos e quantas crianças?*</label>
+                    <input type="number" class="form-control" id="numMoradores" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="numMoradores" class="form-label fw-bold">Se há crianças, qual a idade delas?</label>
                     <input type="number" class="form-control" id="numMoradores" required>
                 </div>
     
-                <div class="mb-3">
-                    <label for="criançasCasa" class="form-label">Existem crianças em sua residência?*</label>
+                <div class="form-check">
+                    <label for="criançasCasa" class="form-label fw-bold">Todos concordam com a adoção desse animal? *
+                    </label>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="criancas" id="sim" required>
-                        <label class="form-check-label" for="sim">Sim</label>
+                        <label class="form-check-label" for="sim">Não moro com outras pessoas.</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="criancas" id="nao" required>
-                        <label class="form-check-label" for="nao">Não</label>
+                        <label class="form-check-label" for="nao">Sim. Já comuniquei e todos concordaram com a adoção.</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="criancas" id="sim" required>
+                        <label class="form-check-label" for="sim">Não. Alguns membros não concordam com a adoção.</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="criancas" id="nao" required>
+                        <label class="form-check-label" for="nao">Ainda não falei com eles sobre a adoção.</label>
                     </div>
                 </div>
     
-                <div class="mb-3">
-                    <label for="rotinaDiaria" class="form-label">Qual é a sua rotina diária?</label>
-                    <textarea class="form-control" id="rotinaDiaria" rows="3"></textarea>
+                <div class="mb-3 mt-3">
+                    <label for="rotinaDiaria" class="form-label fw-bold">Qual o grau de parentesco das pessoas que moram com você? *</label>
+                    <textarea class="form-control" id="rotinaDiaria" rows="4"></textarea>
                 </div>
     
                 <!-- Sobre sua Residência -->
-                <h4 class="mb-3">Sobre sua Residência</h4>
+                <h4 class="mb-3 text-center fs-1">Sobre sua Residência</h4>
     
-                <div class="mb-3">
-                    <label for="tipoResidencia" class="form-label">Qual o tipo de residência onde você mora?</label>
-                    <select class="form-select" id="tipoResidencia" required>
-                        <option selected>Escolha...</option>
-                        <option value="casa">Casa</option>
-                        <option value="apartamento">Apartamento</option>
-                    </select>
-                </div>
-    
-                <div class="mb-3">
-                    <label for="espacoDisponivel" class="form-label">Você possui um quintal ou espaço aberto?</label>
+                <div class="mb-3"></div>
+                    <label for="espacoDisponivel" class="form-label fw-bold">Você mora em apartamento ou casa? *</label>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="quintal" id="quintalSim" required>
                         <label class="form-check-label" for="quintalSim">Sim</label>
@@ -509,15 +500,47 @@
                         <label class="form-check-label" for="quintalNao">Não</label>
                     </div>
                 </div>
+                <div class="mb-3"></div>
+                    <label for="espacoDisponivel" class="form-label fw-bold">Sua residência *</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="quintal" id="quintalSim" required>
+                        <label class="form-check-label" for="quintalSim">é alugada</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="quintal" id="quintalNao" required>
+                        <label class="form-check-label" for="quintalNao">é propria</label>
+                    </div>
+                </div>
+            
+            
+                </div>
     
-                <button type="submit" class="btn btn-primary">Enviar Formulário</button>
-            </form>
+                <div class="mb-3">
+                    <label for="espacoDisponivel" class="form-label fw-bold">Se você mora em condomínio, sabe qual é a posição deles sobre ter animais? *</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="quintal" id="quintalSim" required>
+                        <label class="form-check-label" for="quintalSim">Não moro em condomínio</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="quintal" id="quintalNao" required>
+                        <label class="form-check-label" for="quintalNao">Eles permitem ter animais</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="quintal" id="quintalNao" required>
+                        <label class="form-check-label" for="quintalNao">Eles não permitem ter animais</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="quintal" id="quintalNao" required>
+                        <label class="form-check-label mb-5" for="quintalNao">Irei consultar sobre a permissão de ter animais</label>
+                    </div>
+                </div>
+               </form>
         </div>
     </section>
 
     </main>
 
-    <footer>
+    <footer >
         <!-- Rodapé -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
