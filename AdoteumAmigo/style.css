@@ -156,6 +156,11 @@
     height: auto;
 }
 
+#formulário{
+    background-image: linear-gradient(to right, #FFE7E7, #FFE1E0);
+}
+}
+
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
     .timeline-event {
