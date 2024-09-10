@@ -53,22 +53,22 @@
     </header>
 
     <main>
-              <!-- Seção para carrossel e texto lado a lado -->
+            <!-- Seção para carrossel e texto lado a lado -->
             <section class="container-fluid carousel-and-text mt-auto">
-                <div class="row">
+                <div class="row ">
                     <!-- Coluna de Texto -->
-                    <div class="col-md-4 mt-5 pt-5">
-                        <h1>Doe amor,
-                            doe o seu lar!
+                    <div class="col-md-4 mt-auto mb-5">
+                        <h1>Doe amor,<br>
+                            doe o seu lar!<br>
                             Adote um gatinho</h1><br>
                         <a href="#secao-3" class="btn btn-primary btn-lg">Quero adotar</a>
                     </div>
 
                     <!-- Coluna do Carrossel -->
-                    <div class="col-md-8 pt-1">
+                    <div class="col-md-8">
                         <!-- <img src="./imagens/catsinicio.png" class="img-fluid" alt="..."> -->
 
-                        <div id="carouselExampleCaptions" class="carousel slide">
+                        <div id="carouselExampleCaptions" class="carousel slide mt-2 mb-2">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="./imagens/catsinicio.png" class="d-block w-100" alt="...">
@@ -101,8 +101,7 @@
 
        
         <section id="secao-3" class="container-fluid mt-auto">
-                
-                    <h1 class="display-4 text-center pt-4" style="color: white;">Gatos para adoção</h1>
+                    <h1 class="display-4 text-center pb-3 pt-4" style="color: white;">Gatos para adoção</h1>
                     
                     <div class="row d-flex justify-content-center align-items-center pt-3">
                         <!-- Coluna para o estado -->
@@ -222,25 +221,24 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center pb-3 mt-3">
-                    <a href="#" class="btn btn-primary btn-lg col-3 mt-3" tabindex="-1" role="button" aria-disabled="true">Ver Todos</a>
+                    <a href="#" class="btn btn-primary btn-lg col-3 mb-4" tabindex="-1" role="button" aria-disabled="true">Ver Todos</a>
                 </div>
         </section>
-        <section class="container-fluid">
-            
-                <h1 class="title text-center mt-5">Conheça a ONG Adote um Amigo</h1>
-                <p class="text-center">
+        <section class=" container-fluid terceira-parte mt-5">
+                <h1 class="title text-center fs-1">Conheça a ONG Adote um Amigo</h1>
+                <p class="text-center mt-3 fs-4">
                     Existem muitos <strong>gatos a espera de um lar</strong> e com muito amor para oferecer.<br> Nós fazemos essa ponte
-                    para que você adote um amigo e faça a diferença na vida de um animal carente.
+                    para que você adote um amigo e faça a <br>diferença na vida de um animal carente.
                 </p>
                 
                 <div class="row">
                     <!-- Coluna da Imagem -->
-                    <div class="col-md-4">
+                    <div class="col-md-4 mt-auto">
                         <img src="./imagens/gatGtimiline.png" class="img-fluid img-timeline rounded float-start" alt="Gato esperando adoção">
                     </div>
         
                     <!-- Coluna da Timeline -->
-                    <div class="col-md-8">
+                    <div class="col-md-8 mt-5">
                         <div class="timeline-container">
                             <!-- Evento 1 -->
                             <div class="timeline-event left">
@@ -276,7 +274,15 @@
                             </div>
         
                             <!-- Evento 4 -->
-            
+                            <div class="timeline-event right">
+                                <div class="timeline-content">
+                                    <h3>2019</h3>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="timeline-icon right">
+                                    <img src="./imagens/Group 136191.png" alt="Evento de 2019">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -419,14 +425,29 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 mb-3">
+                    <div class="mb-3">
                         <label for="endereco" class="form-label">Endereço*</label>
                         <input type="text" class="form-control" id="endereco" placeholder="Endereço" required>
                     </div>
-                    <div class="col-md-6 mb-3">
+                    <div class="col-md-6"></div>
                         <label for="bairro" class="form-label">Bairro*</label>
-                        <input type="text" class="form-control" id="bairro" placeholder="Bairro" required>
+                        <input type="text" class="form-control" id="" placeholder="Endereço" required>
                     </div>
+                </div>
+    
+                <!-- Tipo de Adoção -->
+                <label class="form-label">Quais tipos de animais você deseja adotar ou resgatar?*</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tipoAnimal" id="cachorro" required>
+                    <label class="form-check-label" for="cachorro">Cachorro</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tipoAnimal" id="gato" required>
+                    <label class="form-check-label" for="gato">Gato</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tipoAnimal" id="outros" required>
+                    <label class="form-check-label" for="outros">Outros</label>
                 </div>
     
                 <!-- Mais perguntas -->
@@ -489,7 +510,7 @@
                     </div>
                 </div>
     
-                <button type="submit" class="btn btn-primary mb-3">Enviar Formulário</button>
+                <button type="submit" class="btn btn-primary">Enviar Formulário</button>
             </form>
         </div>
     </section>

@@ -71,7 +71,7 @@
 
 /* Estilo para eventos à esquerda */
 .timeline-event.left {
-    left: 0;
+    left: ;
     text-align: right; /* Alinhamento à direita */
 }
 
@@ -101,23 +101,16 @@
     left: -25px; /* Ajuste para alinhar corretamente */
 }
 
-/* Estilo do conteúdo do evento */
-.timeline-content {
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    display: inline-block;
-}
+
+
 
 /* Estilo para ícones */
 .timeline-icon {
     position: absolute;
-    top: 15px;
-    width: 50px;
-    height: 50px;
-    background-color: #ff99a1; /* Cor de fundo do ícone */
+    top: 0.1875rem;
+    width: 3.75rem;
+    height: 3.73rem;
+    background-color: #ff99a1;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -126,12 +119,12 @@
 
 /* Ícone para eventos à esquerda */
 .timeline-icon.left {
-    right: -65px; /* Ajuste para alinhar ícones à esquerda */
+    right: -45px; /* Ajuste para alinhar ícones à esquerda */
 }
 
 /* Ícone para eventos à direita */
 .timeline-icon.right {
-    left: 65px; /* Ajuste para alinhar ícones à direita */
+    left: 45px; /* Ajuste para alinhar ícones à direita */
 }
 
 /* Estilo do botão de "Saiba mais" */
