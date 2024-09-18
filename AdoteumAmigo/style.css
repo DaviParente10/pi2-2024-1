@@ -36,7 +36,7 @@
     gap: 10px; /* Espaço entre o botão e o texto */
     justify-content: center; /* Centraliza horizontalmente */
 }
-.terceira-parte{
+#secao-3{
     background: linear-gradient(to right, #FF7B77 0%, #FFB0AD 100%);
     margin-top: 20px;
 }
@@ -71,7 +71,7 @@
 
 /* Estilo para eventos à esquerda */
 .timeline-event.left {
-    left: 0;
+    left: ;
     text-align: right; /* Alinhamento à direita */
 }
 
@@ -101,23 +101,16 @@
     left: -25px; /* Ajuste para alinhar corretamente */
 }
 
-/* Estilo do conteúdo do evento */
-.timeline-content {
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    display: inline-block;
-}
+
+
 
 /* Estilo para ícones */
 .timeline-icon {
     position: absolute;
-    top: 15px;
-    width: 50px;
-    height: 50px;
-    background-color: #ff99a1; /* Cor de fundo do ícone */
+    top: 0.1875rem;
+    width: 3.75rem;
+    height: 3.73rem;
+    background-color: #ff99a1;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -126,12 +119,12 @@
 
 /* Ícone para eventos à esquerda */
 .timeline-icon.left {
-    right: -65px; /* Ajuste para alinhar ícones à esquerda */
+    right: -45px; /* Ajuste para alinhar ícones à esquerda */
 }
 
 /* Ícone para eventos à direita */
 .timeline-icon.right {
-    left: 65px; /* Ajuste para alinhar ícones à direita */
+    left: 45px; /* Ajuste para alinhar ícones à direita */
 }
 
 /* Estilo do botão de "Saiba mais" */
@@ -155,6 +148,11 @@
     max-width: 300px; /* Ajuste do tamanho máximo da imagem */
     height: auto;
 }
+
+#formulário{
+    background-image: linear-gradient(to right, #FFE7E7, #FFE1E0);
+}
+
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
@@ -190,14 +188,14 @@
 }
 
 .fa-whatsapp {
-    margin-top: 16px;
+    margin-top: 0;
 }
 
-.quarta-parte {
+#secao-4 {
     background-color: #FFE7E7;
 }
 
 /* Cor de fundo - Seção 6 */
-.sexta-parte {
+#secao-6 {
     background-color: #1168AD;
 }

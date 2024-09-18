@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão Gatos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hidden-form {
+            display: none;
+        }
+        
+        body {
+        background-color: #FFE7E7;
+            }
+    </style>
+</head>
+<body>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./imagens/logop.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
+                        Adote um Amigo
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Site</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="loginAdministrador.html" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">Sair</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+        </div>
+    </nav>
+    
+
+<main>
+    <div class="container mt-5">
+        <h1 class="text-center">Gestão Gatos</h1>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <form class="form-inline mb-3">
+                    <div class="form-group mb-2">
+                        <label for="filtro" class="sr-only">Filtrar:</label>
+                        <input type="text" class="form-control" id="filtro" placeholder="Digite para filtrar">
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2 ml-2" id="filtrarBtn">Filtrar</button>
+                    <button type="button" class="btn btn-success mb-2 ml-2" id="criarGatoBtn">Cadastrar Gato</button>
+                </form>
+                
+                <!--<form class="form-inline mb-3" id="filtroForm">
+                    <div class="form-group mb-2">
+                        <label for="filtro" class="sr-only">Filtrar:</label>
+                        <input type="text" class="form-control" id="filtro" placeholder="Digite para filtrar">
+                    </div>
+                    <button type="button" class="btn btn-primary mb-2 ml-2" id="filtrarBtn">Filtrar</button>
+                    <button type="button" class="btn btn-success mb-2 ml-2" id="criarGatoBtn">Criar Gato</button>
+                </form>-->
+            
+                <form class="hidden-form" id="gatoForm">
+                    <div class="form-group">
+                        <label for="nomeGato">Nome Gato</label>
+                        <input type="text" class="form-control" id="nomeGato" value="Garfield">
+                    </div>
+                    <div class="form-group">
+                        <label for="estadoGato">Estado Gato</label>
+                        <input type="text" class="form-control" id="estadoGato" value="DF">
+                    </div>
+                    <div class="form-group">
+                        <label for="regiaoAdministrativaGato">Região Administrativa do Gato</label>
+                        <input type="text" class="form-control" id="estadoGato" value="DF">
+                    </div>
+                    <div class="form-group">
+                        <label for="generoGato">Gênero Gato</label>
+                        <input type="text" class="form-control" id="generoGato" value="Masculino">
+                    </div>
+                    <div class="form-group">
+                        <label for="observacaoGato">Observação Gato</label>
+                        <textarea class="form-control" id="observacaoGato" rows="3">Gato laranja preguiçoso e amante de lasanha.</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="statusGato">Status Gato</label>
+                        <input type="text" class="form-control" id="statusGato" value="Disponível para adoção">
+                    </div>
+                    <div class="form-group">
+                        <label for="imagemGato">Imagem Gato</label>
+                        <input type="file" class="form-control-file" id="imagemGato">
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-warning mb-2 ml-2" id="alterarBtn">Alterar</button>
+                        <button type="button" class="btn btn-danger mb-2 ml-2" id="deletarBtn">Deletar</button>
+                    </div>
+                </form>
+                
+                <form id="criarGatoForm" class="hidden-form">
+                    <div class="form-group">
+                        <label for="nomeGato">Nome Gato:</label>
+                        <input type="text" class="form-control" id="nomeGato" placeholder="Nome do Gato">
+                    </div>
+                    <div class="form-group">
+                        <label for="estadoGato">Estado Gato:</label>
+                        <input type="text" class="form-control" id="estadoGato" placeholder="Estado do Gato">
+                    </div>
+                    <div class="form-group">
+                        <label for="regiaoAdministrativaGato">Região Administrativa do Gato</label>
+                        <input type="text" class="form-control" id="estadoGato" value="DF">
+                    </div>
+                    <div class="form-group">
+                        <label for="generoGato">Gênero Gato:</label>
+                        <input type="text" class="form-control" id="generoGato" placeholder="Gênero do Gato">
+                    </div>
+                    <div class="form-group">
+                        <label for="observacaoGato">Observação Gato:</label>
+                        <input type="text" class="form-control" id="observacaoGato" placeholder="Observação do Gato">
+                    </div>
+                    <div class="form-group">
+                        <label for="statusGato">Status Gato:</label>
+                        <input type="text" class="form-control" id="statusGato" value="Disponível" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="imagemGato">Imagem Gato:</label>
+                        <input type="file" class="form-control" id="imagemGato">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    </div>
+                </form>
+                <div id="mensagemSucesso" class="alert alert-success mt-3" style="display: none;">
+                    Gato cadastrado com sucesso
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<div class="container mt-5">
+    <h3 class="text-center">Acompanhamento de Solicitações</h3>
+    <div class="d-flex justify-content-center mt-4">
+        <div class="card" style="width: 14rem;">
+            <img src="imagens/cad01.png" class="card-img-top" alt="Imagem do Gato">
+            <div class="card-body">
+                <h5 class="card-title">Milk</h5>
+                <p class="card-text">Nome Solicitante: Davi Parente</p>
+                <p class="card-text">Contato Solicitante: davi.parente@ifb.edu.br</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+        <!-- Rodapé -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./imagens/logop.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
+                    Adote um Amigo
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"></li>
+                            <a class="nav-link" href="#">Topo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>    
+
+</footer>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+         document.getElementById('filtrarBtn').addEventListener('click', function(event) {
+            event.preventDefault(); // Evita o envio do formulário
+            document.getElementById('gatoForm').classList.toggle('hidden-form');
+        });
+        document.getElementById('criarGatoBtn').addEventListener('click', function() {
+            var form = document.getElementById('criarGatoForm');
+            if (form.classList.contains('hidden-form')) {
+                form.classList.remove('hidden-form');
+            } else {
+                form.classList.add('hidden-form');
+            }
+        });
+        document.getElementById('criarGatoForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('mensagemSucesso').style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>
